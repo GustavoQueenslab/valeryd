@@ -436,24 +436,31 @@
   <meta name="msapplication-TileImage" content="https://valeryd.se/wp-content/uploads/2017/01/favicon.png" />
 </head>
 
+<style>
+  #masthead .menu>li {
+    border-left: 1px solid transparent !important;
+  }
+
+  #masthead .wmco-search form input[type="search"] {
+    width: 250px
+  }
+
+  #masthead .menu-item-expandable>a:after {
+    content: none
+  }
+</style>
+
 <body
   class="home page-template page-template-templates page-template-flexible page-template-templatesflexible-php page page-id-4 wp-custom-logo catalog-mode theme-storefront woocommerce-no-js storefront-full-width-content storefront-secondary-navigation right-sidebar woocommerce-active">
 
 
   <div id="page" class="hfeed site">
 
-    <header id="masthead" class="site-header" role="banner" style="">
-      <div class="secondary-nav-wrapper">
+    <header id="masthead" class="site-header" role="banner" style="border:none !important;">
+      <div class="secondary-nav-wrapper" style="background: #1B3F71;">
         <div class="container">
-          <div class="widget_text marketingtext">
-            <div class="textwidget custom-html-widget">
-              <h3
-                style="color: white; font-weight: bold; font-size: 16px;  margin-top:auto; margin-bottom: auto; width:auto;">
-                OSLAGBART UTBUD AV PREMIUMPRODUKTER NÄRMAST DIG
-              </h3>
-            </div>
-          </div>
-          <nav class="secondary-nav" role="navigation" style="display: flex;" aria-label="Sekundär navigering">
+
+          <nav class="secondary-nav" role="navigation" style="display: flex" aria-label="Sekundär navigering">
             <ul class="menu">
               <li id="menu-item-41055"
                 class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-41055"><a
@@ -510,36 +517,48 @@
       </div>
       <div class="container">
         <div class="site-branding">
-          <a href="https://valeryd.se/" class="custom-logo-link" rel="home" aria-current="page"><img width="198"
-              height="22" src="https://valeryd.se/wp-content/uploads/2017/01/logo-valeryd.png" class="custom-logo"
-              alt="Valeryd" /></a>
+          <a href="https://valeryd.se/" class="custom-logo-link" rel="home" aria-current="page">
+            <img width="198" height="22" src="https://i.ibb.co/4wHTnkRv/image-5.png" class="custom-logo"
+              alt="Valeryd" />
+            <!-- <img width="198" height="22" src="https://valeryd.se/wp-content/uploads/2017/01/logo-valeryd.png"
+              class="custom-logo" alt="Valeryd" /> -->
+          </a>
         </div>
         <div class="widget_text aftext">
           <div class="textwidget custom-html-widget">
-            <div style="border-left: 1px solid white; border-right: 1px solid white; height: 48px; display: flex;
-    align-items: center;">
+            <div style=" display: flex;
+    align-items: center;justify-items:center;height: 100%">
 
               <a id="butikvisare-link" href="/sok-aterforsaljare">
-                <div class="hitta_butik" style="margin-left: 10px; cursor: pointer; display:flex;">
-                  <img src="https://valeryd.se/wp-content/uploads/2022/02/ikon-butiker.png"
-                    style="height:42px; margin-right: 8px;  margin-top:auto; margin-bottom: auto;">
+                <div class="hitta_butik" style="margin-left: 10px; cursor: pointer; ">
                   <h3 data-narmaste-butik="1" id="butikvisare"
-                    style="color: white; font-weight: bold; font-size: 16px;  margin-top:auto; margin-bottom: auto; width: 190px; ">
-                    500 LAGERFÖRDA BUTIKER
-                    <br>
-                    HITTA DIN BUTIK HÄR
+                    style="color: white; font-size: 12px;  margin-top:auto; margin-bottom: auto; width: 190px; ">
+                    Närmaste butik
                   </h3>
+                  <div style="display: flex; align-items: center; height:100%;">
+                    <img src="https://i.ibb.co/tMFzgmT8/image-9.png" alt="Närmaste butik"
+                      style="width: 50px; height: 50px;">
+                    <div style="font-size: 12px; font-weight: bold; height: 100%;">Mekonomen
+                      Alingsås
+                      (13km)</div>
+                  </div>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="wmco-search reg-search wmco-search-se">
-          <form role="search" method="GET" class="search-form wmco-search__form" action="https://valeryd.se/">
+        <div class="wmco-search reg-search wmco-search-se" style="height: 100%; ">
+          <form role=" search" method="GET" class="search-form wmco-search__form" action="https://valeryd.se/">
             <label>
               <span class="screen-reader-text">Sök efter:</span>
-              <input type="search" class="search-field no-autocomplete"
-                placeholder="Regnr, Broms-ID, OE-nr, Benämning, Artikelnr" value="" name="s">
+              <div style="position: relative" style="">
+                <div style="position:absolute;left:0;top:0;">
+                  <img src="https://i.ibb.co/vCxT3cs3/sverige.png" alt="Sverige"
+                    style="border-radius:4px;height:42px;width:20px">
+                </div>
+                <input type="search" class="search-field no-autocomplete" placeholder="SÖK PÅ: Reg.nr eller vallfrit "
+                  value="" name="s" style="padding-left: 30px !important;height:42px !important;border-radius: 4px;">
+              </div>
             </label>
             <button type="submit">Sök</button>
           </form>
@@ -612,17 +631,16 @@
             })
 
           </script>
-          <a href="/hur-kan-jag-soka/" style="float: right; padding-right: 12px;">Hjälp?</a>
         </div>
 
         <button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span>Meny</span></button>
         <div class="header-icons">
           <!--    <a class="my-account" href="--><!--" title="--><!--"></a>-->
         </div>
-        <div class="widget_text aflogin">
+        <div class="widget_text aflogin" style="padding-top: 20px;">
           <div class="textwidget custom-html-widget">
-            <div style="border-left: 1px solid white; border-right: 1px solid white; height: 48px; display: flex;
-    align-items: center;">
+            <div style=" display: flex;
+    align-items: center; background: ;">
 
               <a href="https://b2b.valeryd.com/" target="_blank" rel="noopener">
                 <div class="hitta_butik" style="margin-left: 10px; cursor: pointer; display:flex;">
@@ -633,15 +651,18 @@
                   </h4>
                 </div>
               </a>
-
             </div>
           </div>
+
+        </div>
+        <div class="easy-search aflogin" style="height: 100%;padding-top: 20px;">
+          <img src="https://i.ibb.co/jvK4Nt1X/easysearch.png" alt="Easy Search">
         </div>
       </div>
-      <div class="primary-nav-wrapper">
+      <div class="primary-nav-wrapper" style="background:#163664;border:none !important;">
         <div class="container">
           <nav id="site-navigation" class="primary-nav" role="navigation" aria-label="Primär navigation">
-            <ul class="menu">
+            <ul class="menu" style="font-size: 12px !important;">
               <li id="menu-item-30894"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-30894 menu-item-expandable">
                 <a href="https://valeryd.se/sok-via-bild/sok-via-bild-axel-och-hjulbroms/">Axel &#038; hjulbroms</a>
@@ -1589,7 +1610,6 @@
         </div>
       </div>
     </header><!-- #masthead -->
-
 
 
 
