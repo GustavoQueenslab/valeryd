@@ -448,6 +448,25 @@
   #masthead .menu-item-expandable>a:after {
     content: none
   }
+
+  .main-banner-title {
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .main-banner-title {
+      font-size: 3em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .main-banner-title {
+      font-size: 1.5em;
+    }
+  }
 </style>
 
 <body
@@ -1616,8 +1635,19 @@
       <div class="woocommerce"></div>
       <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
-          <div class="start-top wallmander">
+          <div class="start-top wallmander" style="
+          background-image: url('https://i.ibb.co/Fk6tvGD1/image-11.png');
+          height: 544px;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;">
+            <div class="container">
+              <h2 class="main-banner-title" style="margin-top: 80px;">RESERVDELAR OCH TILLBEHÖR</h2>
+              <img src="https://i.ibb.co/bRYYX8tG/image-2.png">
+            </div>
+          </div>
+          <!-- <div class="start-top wallmander">
 
             <div class="slider-wrap not-initialized fc-slider"
               data-options="{&quot;controlNav&quot;:true,&quot;directionNav&quot;:true,&quot;slideshow&quot;:true,&quot;slideshowSpeed&quot;:6000,&quot;animationLoop&quot;:true}">
@@ -1719,7 +1749,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <!-- bildgrupper -->
           <!-- inga bildgrupper finns -->
           <div class="start-boxes wallmander container">
